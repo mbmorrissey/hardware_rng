@@ -36,7 +36,7 @@ geiger_rng_seed.R
 
 ## Sanity checks
 
-![](./figures/uniform_rng_example.pdf)
+![Uniform](figures/uniform_rng_example.pdf)
 
 
 ## Random additional ideas
