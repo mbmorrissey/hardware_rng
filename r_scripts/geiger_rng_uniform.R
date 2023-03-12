@@ -53,7 +53,7 @@ while(reads<n){
 }
 
 # generate final plot of example data
-pdf("../figures/uniform_rng_example.pdf",height=5,width=5)
+png("../figures/uniform_rng_example.png",height=480,width=480)
 hist(vals, breaks=seq(0,1,by=0.05),main="",
    xlab="value",ylab="count",xaxt='n',border="lightgray")
 lines(0:1,rep(50,2))
