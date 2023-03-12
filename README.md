@@ -35,6 +35,8 @@ geiger_rng_seed.R
 
 ![uniform example](./figures/uniform_rng_example.png)
 
+*Figure 2.* 1000 random numbers generated compared to the long-run expectation (solid horizontal line.
+
 ## Random additional ideas
 
 - I'm not sure of the quality of the uniform, Poisson and Gaussian distributions.  I have not put much thought into consequences of any timing imperfections.  One possible imperfection comes from the behaviour of the Geiger tube itself.  Each detection will cause a brief collapse of the voltage in the detetor tube. Consequently, there is a lower limit on how quickly new detections can occur. This should cause the uniform distribution to be slightly lacking in extremely small and extremely large values. Also, I have not thought through consequences of timing in the Arduino code.
