@@ -26,7 +26,7 @@ void loop() {
   long start = millis();
 
   // count pulses via interrupt for the interval
-  attachInterrupt(digitalPinToInterrupt(geigerPin),count_pulses, FALLING);
+  attachInterrupt(digitalPinToInterrupt(geigerPin),count_pulses, RISING);
   while(millis() < start+interval){}
   detachInterrupt(digitalPinToInterrupt(geigerPin));
 

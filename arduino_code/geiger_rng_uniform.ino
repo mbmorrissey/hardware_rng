@@ -19,7 +19,7 @@ float r;      // uniform random number
 void setup() {
   Serial.begin(9600);
   delay(100);
-  attachInterrupt(digitalPinToInterrupt(geigerPin),record_pulse, FALLING);
+  attachInterrupt(digitalPinToInterrupt(geigerPin),record_pulse, RISING);
 }
 
 void loop() {
@@ -41,7 +41,7 @@ void loop() {
     r = ((float)(b-a))/((float)(c-a));
 
     // print to serial with reasonable precision
-    Serial.println(r,4);
+    Serial.println(r,6);
     n=0;
   }
 
