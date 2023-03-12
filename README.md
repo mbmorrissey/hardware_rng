@@ -10,13 +10,12 @@ One possible use of the hardware random number generators here could be picking 
 
 This repository contains simple Arduino and R code to generate uniform, Gaussian in Poisson random numbers.  
 These are mainly for proof-of-concept demonstrations.  
-I find that studnets are curious about the idea of pseudorandom vs true random numbers.
+I find that students are curious about the idea of pseudorandom vs true random numbers.
 In most cases I can confidently assure students that R's (pseudo)random numbers are very good.
 But it is potentially an engaging topic to discuss random numbers, and an entry point to interfacing with arbitrary hardware.
 
-If there is any research application for these random numbers it might be that they could be handy for picking random number seeds.
 
-## The hardware
+## Hardware
 
 True randomness in this project is produced by a 
 [kit-built geiger counter from mightohm](https://mightyohm.com/blog/products/geiger-counter/).
