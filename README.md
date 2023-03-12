@@ -34,6 +34,11 @@ geiger_rng_gaussian.R
 
 geiger_rng_seed.R
 
+## Sanity checks
+
+![](./figures/uniform_rng_example.pdf)
+
+
 ## Random additional ideas
 
 I'm not sure of the quality of the uniform, Poisson and Gaussian distributions.  
