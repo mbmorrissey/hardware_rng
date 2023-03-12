@@ -20,7 +20,7 @@ True randomness in this project is produced by a
 
 ## Arduino code
 
-<tt>`geiger_rng_poisson.ino`<tt>
+<tt>geiger_rng_poisson.ino<tt>
 
 geiger_rng_uniform.ino
 
