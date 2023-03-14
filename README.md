@@ -1,6 +1,8 @@
 # hardware_rng
 Arduino and R code to use a geiger counter as a random number generator
 
+## Preamble
+
 Material here is not meant to be research-grade!  
 
 This is not intended to demonstrate or reflect how modern professional hardware random number generators work.  It does generate sensible results that may well be very usable, but high quality pseudo-random number generators, such as those used in base R random functions, are probably best for almost any purposes.  If you *really* need a hardware RNG, you probably are a cryptographer and you probably don't want to be using this!  One possible use of the hardware random number generating schemes here could be picking random number seeds.
