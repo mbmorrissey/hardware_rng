@@ -33,6 +33,8 @@ Figure 1 shows the connections assumed by the Arduino sketches for generating in
 
 ## Sanity checks
 
+Figures 2-5 show samples of uniform (0 to 1), Gaussian, Poisson and (uniform) large integers (possibly useful for pseudo-RNG seeds).
+
 ![uniform example](./figures/uniform_rng_example.png)
 
 *Figure 2.* 1000 uniform random numbers generated compared to the long-run expectation (solid horizontal line).
