@@ -19,17 +19,17 @@ Figure 1 shows the connections assumed by the Arduino sketches for generating in
 
 `geiger_rng_poisson.ino` This sketch counts the number of detections in a five second interval, and reports such a count every five seconds over UART.
 
-`geiger_rng_uniform.ino` This sketch records the time of tripletts of sequential detections.  Since detections are independent of one another (except for a very short minimum interval between detections) the time of the second detection should be uniformly distributed between the first and second detections.  This idea is the basis of the random numbers reporte
+`geiger_rng_uniform.ino` This sketch records the time of tripletts of sequential detections.  Since detections are independent of one another (except for a very short minimum interval between detections) the time of the second detection should be uniformly distributed between the first and second detections.  This idea is the basis of the random numbers reported to UART as they are generated.
 
 ## R scripts
 
-`geiger_rng_poisson.R` This script connects to serial input, and reads poisson data from the Arduino (assuming it is running the ``geiger_rng_poisson.ino`` sketch, and generates a histogram of the data as they accumulated.
+`geiger_rng_poisson.R` This script connects to serial input, and reads poisson data from the Arduino (assuming it is running the ``geiger_rng_poisson.ino`` sketch, and generates a histogram of the data as they accumulate.
 
-geiger_rng_uniform.R
+`geiger_rng_uniform.R` This script connects to a serial input, and reads uniform random variable data data from the Arduino (assuming it is running the ``geiger_rng_uniform.ino`` sketch, and generates a histogram of the data as they accumulate.
 
-geiger_rng_gaussian.R
+`geiger_rng_gaussian.R` This script connects to a serial input and reads pairs of uniform random numbers (assuming that the Arduino providing the serial input is running the `geiger_rng_uniform.ino` sketch).  These pairs are used to generate pairs of independent standard normal random numbers via the [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform).  A histogram is generated as the data accumulate, which compares the data to the expected standard normal (mean zero, variance one).
 
-geiger_rng_seed.R
+`geiger_rng_seed.R` This script reads sets of uniform random numbers (assuming that the Arduino providing the serial input is running the `geiger_rng_uniform.ino` sketch), and converts them to a large number that might plausibly be a sensible way to pick random number seeds.
 
 ## Sanity checks
 
