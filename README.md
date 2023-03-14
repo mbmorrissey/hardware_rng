@@ -13,6 +13,9 @@ This repository contains simple Arduino and R code to generate uniform, Gaussian
 True randomness in this project is produced by a 
 [kit-built geiger counter from mightyohm](https://mightyohm.com/blog/products/geiger-counter/).
 
+
+*photo of set-up to be added here*
+
 *Figure 1.* Connections assumed by the Arduino sketches and R scripts for generating interrupts from the geiger counter to an Arduino UNO, and passing uniform or Poisson random variables via UART/USB.
 
 ## Arduino code
@@ -42,6 +45,10 @@ Figures 2-5 show samples of uniform (0 to 1), Gaussian, Poisson and (uniform) la
 ![gaussian example](./figures/gaussian_rng_example.png)
 
 *Figure 3.* 1000 Gaussian random numbers generated compared to the long-run expectation (unit normal curve).
+
+*histogram of Poisson example to be added here*
+
+*depiction of integers for possible use as RNG seeds to be added here*
 
 ## Random additional ideas
 
