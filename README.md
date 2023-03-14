@@ -35,7 +35,7 @@ geiger_rng_seed.R
 
 ![uniform example](./figures/uniform_rng_example.png)
 
-*Figure 2.* 1000 uniformrandom numbers generated compared to the long-run expectation (solid horizontal line).
+*Figure 2.* 1000 uniform random numbers generated compared to the long-run expectation (solid horizontal line).
 
 ![gaussian example](./figures/gaussian_rng_example.png)
 
