@@ -11,7 +11,7 @@ This repository contains simple Arduino and R code to generate uniform, Gaussian
 ## Hardware
 
 True randomness in this project is produced by a 
-[kit-built geiger counter from mightohm](https://mightyohm.com/blog/products/geiger-counter/).
+[kit-built geiger counter from mightyohm](https://mightyohm.com/blog/products/geiger-counter/).
 
 *Figure 1.* Connections assumed by the Arduino sketches and R scripts for generating interrupts from the geiger counter to an Arduino UNO, and passing uniform or Poisson random variables via UART/USB.
 
