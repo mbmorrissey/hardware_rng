@@ -13,17 +13,17 @@ This repository contains simple Arduino and R code to generate uniform, Gaussian
 True randomness in this project is produced by a 
 [kit-built geiger counter from mightohm](https://mightyohm.com/blog/products/geiger-counter/).
 
-(describe jumpers to Arduino Uno)
+Figure 1 shows the connections assumed by the Arduino sketches for generating interrupts from the geiger counter to an Arduino UNO.
 
 ## Arduino code
 
-`geiger_rng_poisson.ino`
+`geiger_rng_poisson.ino` This sketch counts the number of detections in a five second interval, and reports such a count every five seconds over UART.
 
-geiger_rng_uniform.ino
+`geiger_rng_uniform.ino` This sketch records the time of tripletts of sequential detections.  Since detections are independent of one another (except for a very short minimum interval between detections) the time of the second detection should be uniformly distributed between the first and second detections.  This idea is the basis of the random numbers reporte
 
 ## R scripts
 
-geiger_rng_poisson.R
+`geiger_rng_poisson.R` This script connects to serial input, and reads poisson data from the Arduino (assuming it is running the ``geiger_rng_poisson.ino`` sketch, and generates a histogram of the data as they accumulated.
 
 geiger_rng_uniform.R
 
