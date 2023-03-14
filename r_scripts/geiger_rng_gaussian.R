@@ -71,9 +71,10 @@ while(reads<n){
 }
 
 # generate final plot of example data
-png("../figures/uniform_rng_example.png",height=480,width=480)
-hist(vals, breaks=seq(0,1,by=0.05),main="",
+png("../figures/gaussian_rng_example.png",height=480,width=480)
+hist(vals,main="",xlim=c(-4,4),
    xlab="value",ylab="count",xaxt='n',border="lightgray")
-lines(0:1,rep(50,2))
-axis(side=1,seq(0,1,by=0.1))
+x<-seq(-5,5,length.out=60)
+lines(x,dnorm(x)*reads/2)
+axis(side=1,seq(-4,4,by=2))
 dev.off()
