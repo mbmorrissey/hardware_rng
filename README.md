@@ -3,7 +3,7 @@ Arduino and R code to use a geiger counter as a random number generator
 
 Material here is not meant to be research-grade!  
 
-This is not intended to demonstrate or reflect how modern professional hardware random number generators work.  It does generate sensible results that may well be very usable, but high quality pseudo-random number generators, such as those used in base R random functions, are probably best for almost any purposes.  If you *really* need a hardware RNG, you probably are a cryptographer and you probably don't want to be using ths!  One possible use of the hardware random number generating schemes here could be picking random number seeds.
+This is not intended to demonstrate or reflect how modern professional hardware random number generators work.  It does generate sensible results that may well be very usable, but high quality pseudo-random number generators, such as those used in base R random functions, are probably best for almost any purposes.  If you *really* need a hardware RNG, you probably are a cryptographer and you probably don't want to be using this!  One possible use of the hardware random number generating schemes here could be picking random number seeds.
 
 This repository contains simple Arduino and R code to generate uniform, Gaussian in Poisson random numbers.   These are mainly for proof-of-concept demonstrations.  I find that students are curious about the idea of pseudorandom vs true random numbers. In most cases I can confidently assure students that R's (pseudo)random numbers are very good. But it is potentially an engaging topic to discuss random numbers, and an entry point to interfacing with arbitrary hardware.
 
